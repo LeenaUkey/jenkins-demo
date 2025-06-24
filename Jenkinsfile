@@ -12,7 +12,7 @@ pipeline {
         stage('Setup NGINX') {
             steps {
                 echo 'Making script executable...'
-                sh 'chmod +x nginx-setup.sh'
+                sh 'sudo chmod +x nginx-setup.sh'
 
                 echo 'Running NGINX setup script...'
                 sh './nginx-setup.sh'
